@@ -1,2 +1,2 @@
-# go
-Random go stuff
+# Go
+Random go stuff.
