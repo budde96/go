@@ -46,7 +46,6 @@ func main() {
 	gross, pension_rate, pension_extra, invsav, rent, household, bills, debt := input()
 	exemption := excal(gross)
 	net := netcal(exemption, gross)
-	fmt.Println((gross-exemption)*0.22)
 	pension_total := ptotal(pension_extra, gross, pension_rate)
 	remaining := left(net, pension_total, invsav, rent, household, bills, debt)
 	fmt.Printf("------\nYour net income is %.2f€.\nAfter paying:\n%.2f€ into your pensions,\n%.2f€ in investments/savings\n%.2f€ in rent,\n%.2f€ for food,\n%.2f€ in bills,\n%.2f€ into debts.\nYou have %.2f€ left.\n", net, pension_total, invsav, rent, household, bills, debt, remaining)
