@@ -1,5 +1,5 @@
 package main
-import	"fmt"
+import "fmt"
 func input() (float64, float64, float64, float64, float64, float64, float64, float64) {
 	var g, pr, pe, is, r, h, b, d float64
 	fmt.Print("Gross income(monthly): ")
