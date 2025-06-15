@@ -18,7 +18,11 @@ func input() (float64, float64, float64, float64, float64, float64, float64, flo
 	fmt.Scan(&b)
 	fmt.Print("Debts: ")
 	fmt.Scan(&d)
-	return g, pr, pe, is, r, h, b, d
+	if g < 0 || pr < 0 || pe < 0 || is < 0 || r < 0 || h < 0 || b < 0 || d < 0{
+		panic("Can't use negative numbers.")
+	} else {
+		return g, pr, pe, is, r, h, b, d
+	}
 }
 func excal(g float64) float64 {
 	if g <= 1200 || 654-(0.72667*(g-1200)) >= g*0.22 {
